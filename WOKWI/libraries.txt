@@ -1,0 +1,3 @@
+ThingSpeak
+DHT sensor library 
+Adafruit Unified Sensor
