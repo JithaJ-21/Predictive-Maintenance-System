@@ -47,9 +47,12 @@ Predictive_Maintenance/
 │     ├── predict.py
 │     ├── read_thingspeak.py
 |     ├── simulator.py
-|     ├── train_fault_model.py
 |     ├── train_model.py
-│
+|     ├── saved_model.pkl
+|     ├── train_fault_model.py
+|     ├── fault_model.pkl
+|
+├── requirements.txt
 └── README.md
 ```
 --------
