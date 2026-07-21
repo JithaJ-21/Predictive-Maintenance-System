@@ -32,6 +32,8 @@ Predictive_Maintenance/
 ├── graphs/
 │
 ├── python/
+|     ├── __pycache__
+|     ├── __init__.py
 │     ├── anomaly.py
 │     ├── analysis.py
 │     ├── cloud.py
@@ -411,24 +413,42 @@ machine_dataset.csv
 
 --------
 ### Execution Sequence
-##### Step 1
 
-Run the ESP32 simulation in Wokwi.
+##### Step 1: Clone the repository
+
+```bash
+git clone https://github.com/JithaJ-21/Predictive-Maintenance-System.git
+```
+
+##### Step 2: Open the project
+
+Open Visual Studio Code and select:
+
+**File → Open Folder**
+
+Choose the cloned **Predictive-Maintenance-System** folder.
+
+##### Step 3: Install the required Python libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+##### Step 4: Run the ESP32 simulation in Wokwi.
 ```
 https://wokwi.com/projects/469505239406401537
 ```
 
-##### Step 2
+##### Step 5: Open Thingspeak
 
 The ESP32 uploads sensor readings to ThingSpeak.
 ```
-https://thingspeak.mathworks.com/channels/3426878/private_show
+https://thingspeak.mathworks.com/channels/3426878
 ```
 
-##### Step 3
+##### Step 6:  Run the backend
 
 Run:
-
 ```
 python main.py
 ```
@@ -442,10 +462,9 @@ This will:
 - Save logs
 - Generate graphs
   
-##### Step 4
+##### Step 7: Launch the Streamlit dashboard
 
 Open the dashboard:
-
 ```
 streamlit run dashboard.py
 ```
@@ -458,9 +477,9 @@ The dashboard displays:
 - Fault analysis
 - Machine health indicators
 
-##### Step 5
+##### Step 8: Generate PDF Report
 
-Click Generate PDF Report from the dashboard to download a complete industrial maintenance report.
+Click **Generate PDF Report** from the Streamlit dashboard to download the maintenance report.
 
 ### Project Workflow
 ```
