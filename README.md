@@ -414,10 +414,16 @@ machine_dataset.csv
 ##### Step 1
 
 Run the ESP32 simulation in Wokwi.
+```
+https://wokwi.com/projects/469505239406401537
+```
 
 ##### Step 2
 
 The ESP32 uploads sensor readings to ThingSpeak.
+```
+https://thingspeak.mathworks.com/channels/3426878/private_show
+```
 
 ##### Step 3
 
