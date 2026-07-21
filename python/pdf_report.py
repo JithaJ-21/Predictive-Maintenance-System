@@ -11,7 +11,6 @@ from reportlab.platypus import (
     PageBreak
 )
 from reportlab.pdfgen import canvas
-from reportlab.graphics.shapes import Circle
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
 from reportlab.graphics.shapes import Drawing, Line
