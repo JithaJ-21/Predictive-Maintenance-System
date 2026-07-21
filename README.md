@@ -1,3 +1,6 @@
+> **Note:**
+>
+> The project execution sequence and setup instructions are provided at the end of this README.
 ### 🚀 Industrial Predictive Maintenance System
 
 #### Simulated Industrial Monitoring using ESP32 (Wokwi), ThingSpeak, Machine Learning & Streamlit Dashboard
@@ -437,19 +440,36 @@ Choose the cloned **Predictive-Maintenance-System** folder.
 pip install -r requirements.txt
 ```
 
-##### Step 4: Run the ESP32 simulation in Wokwi.
+##### Step 4: First-Time Setup
+
+Run the following commands once to generate the dataset and train the machine learning models:
+
+```bash
+python -m python.generate_dataset
+python -m python.train_model
+python -m python.train_fault_model
+```
+
+This will create:
+- `machine_dataset.csv`
+- `python/saved_model.pkl`
+- `python/fault_model.pkl`
+
+The models are required before running the application.
+
+##### Step 5: Run the ESP32 simulation in Wokwi.
 ```
 https://wokwi.com/projects/469505239406401537
 ```
 
-##### Step 5: Open Thingspeak
+##### Step 6: Open Thingspeak
 
 The ESP32 uploads sensor readings to ThingSpeak.
 ```
 https://thingspeak.mathworks.com/channels/3426878
 ```
 
-##### Step 6:  Run the backend
+##### Step 7:  Run the backend
 
 Run:
 ```
@@ -465,7 +485,7 @@ This will:
 - Save logs
 - Generate graphs
   
-##### Step 7: Launch the Streamlit dashboard
+##### Step 8: Launch the Streamlit dashboard
 
 Open the dashboard:
 ```
@@ -480,7 +500,7 @@ The dashboard displays:
 - Fault analysis
 - Machine health indicators
 
-##### Step 8: Generate PDF Report
+##### Step 9: Generate PDF Report
 
 Click **Generate PDF Report** from the Streamlit dashboard to download the maintenance report.
 
