@@ -6,8 +6,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
 from pdf_report import generate_pdf
-from reportlab.platypus import Spacer
-from reportlab.lib.units import inch
 
 st.set_page_config(
     page_title="Predictive Maintenance Dashboard",
