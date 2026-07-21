@@ -298,10 +298,6 @@ def generate_pdf():
     )
     story.append(PageBreak())
 
-    ####################################################
-    # EXECUTIVE SUMMARY
-    ####################################################
-
     blue_heading = ParagraphStyle(
         "BlueHeading",
         parent=heading,
